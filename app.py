@@ -18,8 +18,8 @@ def predict_file():
         
         # Make prediction
         prediction = model.predict(features)
-        result = f"Prediction: {int(prediction[0])}"
-        #result = f"Prediction (0=No Diabetes, 1=Diabetes): {int(prediction[0])}"
+        #result = f"Prediction: {int(prediction[0])}"
+        result = f"Prediction (0=No Diabetes, 1=Diabetes): {int(prediction[0])}"
 
     except Exception as e:
         result = f"Error: {str(e)}"
